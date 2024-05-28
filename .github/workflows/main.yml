@@ -1,9 +1,9 @@
-name: Build on push branch
+name: Build on push tag
 # on: [workflow_dispatch]
 on:
   push:
-    branches:
-        - master
+    tags:
+      - "v*.*.*"
 jobs:
   build:
     name: "v${{ matrix.build_env.tag }} - ${{ matrix.build_env.pkgarch}} :: ${{ matrix.build_env.target}}/${{ matrix.build_env.subtarget}} build"
