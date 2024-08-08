@@ -16,7 +16,7 @@ jobs:
             pkgarch: mips_24kc
             target: ath79
             subtarget: generic
-            vermagic: "34a8cffa541c94af8232fe9af7a1f5ba"
+            vermagic: "bee655e7f41679981b85a223f3aba35b"
 
     steps:
       - uses: actions/checkout@v4
